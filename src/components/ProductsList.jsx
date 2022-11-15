@@ -5,7 +5,6 @@ import Carousel from 'react-elastic-carousel';
 const breakPoints = [
     { width: 400, itemsToShow: 1 },
     { width: 550, itemsToShow: 2 },
-
     { width: 900, itemsToShow: 4 },
 ];
 
@@ -15,7 +14,7 @@ const ProductsList = ({ products, title, query }) => {
             <h2 className='font-extrabold text-2xl mb-2'>{title}</h2>
             <Carousel
                 itemsToShow={4}
-                itemsToScroll={4}
+                itemsToScroll={1}
                 pagination={false}
                 breakPoints={breakPoints}
             >
