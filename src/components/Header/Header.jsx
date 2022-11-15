@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Logo from './Logo';
 import { BsHeart, BsCart2 } from 'react-icons/bs';
 import ProfileIcon from './ProfileIcon';
@@ -11,9 +12,9 @@ const Header = ({ query, setQuery }) => {
     return (
         <div className='bg-[#ffe44d]'>
             <header className='container mx-auto flex justify-between items-center py-4'>
-                <a href='/'>
+                <Link to={'/'}>
                     <Logo />
-                </a>
+                </Link>
                 <input
                     value={query}
                     onChange={handleQuery}

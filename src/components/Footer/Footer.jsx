@@ -2,46 +2,47 @@ import React from 'react';
 import Logo from './Logo';
 import { BsWhatsapp, BsTelegram, BsInstagram, BsFacebook } from 'react-icons/bs';
 import { FaViber } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
         <div className='bg-[#ffe44d]'>
             <footer className='container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 text-center justify-items-center py-8 gap-3'>
                 <div className='flex flex-col justify-between'>
-                    <a href='/'>
+                    <Link to={'/'}>
                         <Logo />
-                    </a>
+                    </Link>
                     <span className='text-sm'>
                         &copy;{new Date().getFullYear()} Интернет-магазин DogFood.ru
                     </span>
                 </div>
                 <div className='flex flex-col  gap-2'>
-                    <a href='/' className='hover:underline'>
+                    <Link to={'/catalog'} className='hover:underline'>
                         Каталог
-                    </a>
-                    <a href='/' className='hover:underline'>
+                    </Link>
+                    <Link to={'/'} className='hover:underline'>
                         Акции
-                    </a>
-                    <a href='/' className='hover:underline'>
+                    </Link>
+                    <Link to={'/'} className='hover:underline'>
                         Новости
-                    </a>
-                    <a href='/' className='hover:underline'>
+                    </Link>
+                    <Link to={'/'} className='hover:underline'>
                         Отзывы
-                    </a>
+                    </Link>
                 </div>
                 <div className='flex flex-col gap-2'>
-                    <a href='/' className='hover:underline'>
+                    <Link to={'/'} className='hover:underline'>
                         Оплата и доставка
-                    </a>
-                    <a href='/' className='hover:underline'>
+                    </Link>
+                    <Link to={'/'} className='hover:underline'>
                         Часто спрашивают
-                    </a>
-                    <a href='/' className='hover:underline'>
+                    </Link>
+                    <Link to={'/'} className='hover:underline'>
                         Обратная связь
-                    </a>
-                    <a href='/' className='hover:underline'>
+                    </Link>
+                    <Link to={'/'} className='hover:underline'>
                         Контакты
-                    </a>
+                    </Link>
                 </div>
                 <div className='flex flex-col gap-2'>
                     <h4 className='font-bold text-xl'>Мы на связи</h4>

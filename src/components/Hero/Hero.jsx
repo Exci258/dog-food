@@ -1,5 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { MdArrowForwardIos } from 'react-icons/md';
+
 const Hero = () => {
     return (
         <section className='bg-[#ffe44d] pt-10'>
@@ -18,9 +20,11 @@ const Hero = () => {
                         работы с доставкой по России и Миру
                     </p>
                 </div>
-                <button className='bg-white py-3 px-5 my-10 rounded-full text-lg font-bold flex items-center gap-4 shadow-xl hover:scale-105'>
-                    Каталог <MdArrowForwardIos />
-                </button>
+                <Link to={'/catalog'}>
+                    <button className='bg-white py-3 px-5 my-10 rounded-full text-lg font-bold shadow-xl hover:scale-105 flex items-center gap-4'>
+                        Каталог <MdArrowForwardIos />
+                    </button>
+                </Link>
             </div>
         </section>
     );
