@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import Api from './api/Api';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
@@ -24,6 +24,7 @@ function App() {
             <Routes>
                 <Route path='/' element={<HomePage products={products} query={query} />} />
                 <Route path='/catalog' element={<Catalog products={products} query={query} />} />
+                <Route path='*' element={<Navigate to={'/'} replace />} />
             </Routes>
             <Footer />
         </div>
